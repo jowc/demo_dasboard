@@ -1,0 +1,8 @@
+/* :host {
+  mat-icon {
+    @apply align-middle mr-5;
+  }
+} */
+mat-icon {
+  @apply align-middle mr-5;
+}

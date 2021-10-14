@@ -15,9 +15,9 @@ const routes: Routes = [
     {
       path: 'post',
       component: PostsComponent
-    }
-  ]},
-  {path:'**', component: DashboardComponent}
+    },
+    {path:'**', component: DashboardComponent}
+  ]}
 ];
 
 @NgModule({
