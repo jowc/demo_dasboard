@@ -4,8 +4,8 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
 
-const routes: Routes = [{
-  path: "",
+const routes: Routes = [
+  {path: "",
   component: DefaultComponent,
   children:[
     {
@@ -16,8 +16,9 @@ const routes: Routes = [{
       path: 'post',
       component: PostsComponent
     }
-  ]
-}];
+  ]},
+  {path:'**', component: DashboardComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

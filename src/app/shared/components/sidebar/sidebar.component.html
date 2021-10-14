@@ -1,1 +1,20 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+    <div class="profileCard">
+        <div class="header">
+            <h2>Joseph Chikeme</h2>
+            <h4>joecdev@gmail.com</h4>
+        </div>
+        <img src="../../../../assets/bullet.jpg" alt="Bullet Profile" srcset="">
+    </div>
+    <mat-divider></mat-divider>
+    <div class="siteNav">
+        <h2 matSubheader>Pages</h2>
+        <a [routerLink]="['/']" routerLinkActive="bg-gray-50" mat-list-item>Dashboard</a>
+        <a [routerLink]="['/post']" routerLinkActive="bg-gray-50" mat-list-item>Posts</a>
+        <a [routerLink]="['/article']" routerLinkActive="bg-gray-50" mat-list-item>Article</a>
+    </div>
+    <mat-divider></mat-divider>
+    <div #extraMenu>
+        Another Menu
+    </div>
+</mat-nav-list>
