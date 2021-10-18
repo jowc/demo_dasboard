@@ -11,6 +11,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { CardComponent } from './widget/card/card.component';
 
 
 
@@ -23,7 +24,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    AreaComponent
+    AreaComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -39,7 +41,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    AreaComponent
+    AreaComponent,
+    CardComponent
   ]
 })
 export class SharedModule { }
