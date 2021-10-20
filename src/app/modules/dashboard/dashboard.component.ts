@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  label: string = "Crypto"
+  total: string = "200"
+  percentage: string = "50"
 
   constructor() { }
 

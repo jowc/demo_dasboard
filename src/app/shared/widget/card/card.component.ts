@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import { cardOption } from '../../helpers/cardChartOption';
 
@@ -8,6 +8,11 @@ import { cardOption } from '../../helpers/cardChartOption';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
+  @Input() label:string = ""
+  @Input() total:string = ""
+  @Input() percentage:string = ""
+
+
   Highcharts: typeof Highcharts = Highcharts; // required
   chartOptions:any = {}
 

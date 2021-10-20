@@ -6,16 +6,16 @@
 
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
     <mat-card fxFlex="25">
-        <app-widget-card></app-widget-card>
+        <app-widget-card [label]="label" [total]="total" [percentage]="percentage"></app-widget-card>
     </mat-card>
     <mat-card fxFlex="25">
-        <app-widget-card></app-widget-card>
+        <app-widget-card label="Users" total="200" percentage="65"></app-widget-card>
     </mat-card>
     <mat-card fxFlex="25">
-        <app-widget-card></app-widget-card>
+        <app-widget-card label="Minerals" total="8" percentage="92"></app-widget-card>
     </mat-card>
     <mat-card fxFlex="25">
-        <app-widget-card></app-widget-card>
+        <app-widget-card label="Skill" total="400" percentage="29"></app-widget-card>
     </mat-card>
 </div>
 <br>
