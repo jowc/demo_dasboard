@@ -1,1 +1,27 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+    <div class="text-center flex flex-col justify-center p-5">
+        <div class="header">
+            <h2>Joseph Chikeme</h2>
+            <h4>joecdev@gmail.com</h4>
+        </div>
+        <img src="../../../../assets/bullet.jpg" alt="Bullet Profile" srcset=""
+            class="rounded-full w-24 h-24 object-cover object-center mx-auto shadow-xl">
+    </div>
+    <mat-divider></mat-divider>
+    <div class="siteNav">
+        <h2 matSubheader>Pages</h2>
+        <a [routerLink]="['/']" routerLinkActive="bg-gray-50" mat-list-item>Dashboard</a>
+        <a [routerLink]="['/post']" routerLinkActive="bg-gray-50" mat-list-item>Posts</a>
+        <a routerLink="/article" routerLinkActive="bg-gray-50" mat-list-item>Article</a>
+    </div>
+    <mat-divider></mat-divider>
+    <div #extraMenu>
+        <h2 matSubheader>Tools</h2>
+        <a routerLink="/contact" routerLinkActive="bg-gray-50" mat-list-item>
+            <mat-icon>import_contacts</mat-icon> Contacts
+        </a>
+        <a routerLink="/contact" routerLinkActive="bg-gray-50" mat-list-item>
+            <mat-icon>contact_phone</mat-icon> Leads
+        </a>
+    </div>
+</mat-nav-list>

@@ -1,9 +1,9 @@
-<app-header></app-header>
-<mat-drawer-container>
-    <mat-drawer mode="side" opened>
+<app-header (toggleForMe)="sideBarToggler()"></app-header>
+<mat-drawer-container class="h-full">
+    <mat-drawer mode="side" [opened]="sideBarOpen" class="w-80">
         <app-sidebar></app-sidebar>
     </mat-drawer>
-    <mat-drawer-content>
+    <mat-drawer-content class="p-5">
         <router-outlet></router-outlet>
     </mat-drawer-content>
 </mat-drawer-container>

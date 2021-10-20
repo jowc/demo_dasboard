@@ -1,1 +1,40 @@
-<p>header works!</p>
+<mat-toolbar color="primary" class="w-full">
+    <mat-toolbar-row>
+        <div class="flex w-full">
+            <div class="flex w-6/12">
+                <button (click)="toggleSideBar()" mat-icon-button class="mr-3">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <span class="self-center">My App</span>
+            </div>
+
+            <div class="flex justify-end w-6/12">
+                <ul class="flex list-none space-x-6">
+                    <li>
+                        <button mat-icon-button>
+                            <mat-icon>settings</mat-icon>
+                        </button>
+                    </li>
+                    <li>
+                        <button mat-icon-button>
+                            <mat-icon>help icon</mat-icon>
+                        </button>
+                    </li>
+                    <li>
+                        <button mat-button [matMenuTriggerFor]="menu">
+                            <mat-icon>person_outline</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu" class="mt-4">
+                            <button mat-menu-item> Sign Out
+                                <mat-icon>exit_to_app</mat-icon>
+                            </button>
+                        </mat-menu>
+
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </mat-toolbar-row>
+</mat-toolbar>
