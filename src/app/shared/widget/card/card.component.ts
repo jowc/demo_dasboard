@@ -20,6 +20,11 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
     this.chartOptions = cardOption
+    setTimeout(() => {
+      window.dispatchEvent(
+        new Event('resize')
+      )
+    }, 300);
   }
 
 }

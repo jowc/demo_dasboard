@@ -1,17 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import { areaOption } from '../../helpers/areaChartOptions';
-import { Chart } from 'highcharts';
-
-
-let ctx;
 
 @Component({
-  selector: 'app-widget-area',
-  templateUrl: './area.component.html',
-  styleUrls: ['./area.component.css']
+  selector: 'app-widget-table',
+  templateUrl: './table.component.html',
+  styleUrls: ['./table.component.css']
 })
-export class AreaComponent implements OnInit {
+export class TableComponent implements OnInit {
   Highcharts: typeof Highcharts = Highcharts; // required
   chartOptions:any = {}
 
