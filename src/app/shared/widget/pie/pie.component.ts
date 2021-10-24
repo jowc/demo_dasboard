@@ -1,17 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
-import { areaOption } from '../../helpers/areaChartOptions';
-import { Chart } from 'highcharts';
+import { pieOption } from '../../helpers/pieChart';
 
-
-let ctx;
 
 @Component({
-  selector: 'app-widget-area',
-  templateUrl: './area.component.html',
-  styleUrls: ['./area.component.css']
+  selector: 'app-widget-pie',
+  templateUrl: './pie.component.html',
+  styleUrls: ['./pie.component.css']
 })
-export class AreaComponent implements OnInit {
+export class PieComponent implements OnInit {
+
   Highcharts: typeof Highcharts = Highcharts; // required
   chartOptions:any = {}
 
@@ -19,7 +17,7 @@ export class AreaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.chartOptions = areaOption
+    this.chartOptions = pieOption
     setTimeout(() => {
       window.dispatchEvent(
         new Event('resize')

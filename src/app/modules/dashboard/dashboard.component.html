@@ -21,7 +21,11 @@
 <br>
 
 <mat-divider></mat-divider>
-<div>
-    <div>Table</div>
-    <div>Pie Chart</div>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+    <div fxFlex="60">
+        <app-widget-table></app-widget-table>
+    </div>
+    <div fxFlex="40">
+        <app-widget-pie></app-widget-pie>
+    </div>
 </div>
