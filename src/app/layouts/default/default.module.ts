@@ -11,6 +11,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DashboardService } from 'src/app/modules/dashboard.service';
+import { ChartService } from 'src/app/modules/chart.service';
 
 
 
@@ -32,7 +33,8 @@ import { DashboardService } from 'src/app/modules/dashboard.service';
     FlexLayoutModule
   ],
   providers: [
-    DashboardService
+    DashboardService,
+    ChartService
   ]
 })
 export class DefaultModule{ }
