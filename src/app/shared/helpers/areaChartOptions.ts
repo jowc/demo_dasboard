@@ -1,4 +1,5 @@
 import { Options } from "highcharts";
+import {ChartService} from "../../modules/chart.service"
 
 export const areaOption: any = {
     chart: {
@@ -31,3 +32,5 @@ export const areaOption: any = {
         data: [2, 2, 2, 6, 13, 30, 46]
     }]
 }
+
+// console.log(ChartService.get(getArea()))

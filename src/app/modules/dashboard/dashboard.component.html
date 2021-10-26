@@ -1,21 +1,21 @@
 <div>
-    <app-widget-area></app-widget-area>
+    <app-widget-area [data]="bigChart"></app-widget-area>
 </div>
 <mat-divider></mat-divider>
 <br>
 
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
     <mat-card fxFlex="25">
-        <app-widget-card [label]="label" [total]="total" [percentage]="percentage"></app-widget-card>
+        <app-widget-card [data]="cardChart" [label]="label" [total]="total" [percentage]="percentage"></app-widget-card>
     </mat-card>
     <mat-card fxFlex="25">
-        <app-widget-card label="Users" total="200" percentage="65"></app-widget-card>
+        <app-widget-card [data]="cardChart" label="Users" total="200" percentage="65"></app-widget-card>
     </mat-card>
     <mat-card fxFlex="25">
-        <app-widget-card label="Minerals" total="8" percentage="92"></app-widget-card>
+        <app-widget-card [data]="cardChart" label="Minerals" total="8" percentage="92"></app-widget-card>
     </mat-card>
     <mat-card fxFlex="25">
-        <app-widget-card label="Skill" total="400" percentage="29"></app-widget-card>
+        <app-widget-card [data]="cardChart" label="Skill" total="400" percentage="29"></app-widget-card>
     </mat-card>
 </div>
 <br>
@@ -26,6 +26,6 @@
         <app-widget-table></app-widget-table>
     </div>
     <div fxFlex="40">
-        <app-widget-pie></app-widget-pie>
+        <app-widget-pie [data]="pieChart"></app-widget-pie>
     </div>
 </div>
