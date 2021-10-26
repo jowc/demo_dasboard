@@ -10,6 +10,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widget/card/card.component';
 import { PieComponent } from './widget/pie/pie.component';
@@ -40,6 +41,7 @@ import { TableComponent } from './widget/table/table.component';
     MatIconModule,
     MatMenuModule,
     MatListModule,
+    MatTableModule
   ],
   exports: [
     HeaderComponent,
