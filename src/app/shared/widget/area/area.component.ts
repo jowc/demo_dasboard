@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
-import { areaOption } from '../../helpers/areaChartOptions';
-import { Chart } from 'highcharts';
+// import { areaOption } from '../../helpers/areaChartOptions';
+// import { Chart } from 'highcharts';
 
 
 let ctx;

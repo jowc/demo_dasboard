@@ -11,12 +11,15 @@ export class DashboardComponent implements OnInit {
   total: string = "200"
   percentage: string = "50"
   bigChart: any = []
+  cardChart: any = []
+  pieChart: any = []
 
   constructor(private payload: ChartService) { }
 
   ngOnInit(): void {
     this.bigChart = this.payload.getArea()
-    console.log(this.bigChart)
+    this.cardChart = this.payload.getCard()
+    this.pieChart = this.payload.getPie()
   }
 
 }
