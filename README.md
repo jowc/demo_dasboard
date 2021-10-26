@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## DashBoard Preview
 
-![](Demo Material Design.gif)
+![Demo Preview](demo-material.gif)
 
 ## Development server
 
